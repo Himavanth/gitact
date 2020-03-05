@@ -5,7 +5,8 @@ on:
     branches:
       - master
 jobs:
-  build:
+  deploy:
+    name: Deploy to Stage on Push
     runs-on: ${{ matrix.os }}
     strategy:
       max-parallel: 1
